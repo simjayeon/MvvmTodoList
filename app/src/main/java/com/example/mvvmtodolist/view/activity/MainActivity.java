@@ -1,4 +1,4 @@
-package com.example.mvvmtodolist.view;
+package com.example.mvvmtodolist.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
