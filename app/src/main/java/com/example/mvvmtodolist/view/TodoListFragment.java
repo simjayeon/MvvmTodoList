@@ -1,4 +1,4 @@
-package com.example.mvvmtodolist.view.fragment;
+package com.example.mvvmtodolist.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -27,13 +27,6 @@ public class TodoListFragment extends Fragment {
 
         todoViewModel = new ViewModelProvider(this).get(TodoViewModel.class);
         todoListBinding = FragmentTodoListBinding.inflate(inflater, container, false);
-
-        todoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(String s) {
-                todoListBinding.text.setText(s);
-            }
-        });
 
         return todoListBinding.getRoot();
     }
